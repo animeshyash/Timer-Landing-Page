@@ -1,0 +1,135 @@
+@media screen and (min-width: 768px) {
+  .shape-blob {
+    background: #ff00b8;
+    position: absolute;
+    height: 190px;
+    width: 270px;
+    border-radius: 40% 50% 30% 40%;
+    animation: movement_one 12s ease-in-out 1500ms infinite both;
+    opacity: 0.6;
+    z-index: -1;
+    filter: blur(100px);
+  }
+
+  .shape-blob-Two {
+    background: #792bf2;
+    position: absolute;
+    height: 190px;
+    width: 270px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 40% 50% 30% 40%;
+    animation: movement_two 12s ease-in-out 1500ms infinite both;
+    opacity: 0.7;
+    z-index: -1;
+    filter: blur(79px);
+  }
+
+  @keyframes movement_one {
+    0%,
+    100% {
+      left: 0;
+      top: 0;
+    }
+    25% {
+      left: 80%;
+      top: 0;
+    }
+    50% {
+      left: 80%;
+      top: 70%;
+    }
+    75% {
+      left: 0;
+      top: 70%;
+    }
+  }
+
+  @keyframes movement_two {
+    0%,
+    100% {
+      right: 0;
+      bottom: 0;
+    }
+    25% {
+      right: 80%;
+      bottom: 0;
+    }
+    50% {
+      right: 80%;
+      bottom: 70%;
+    }
+    75% {
+      right: 0;
+      bottom: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shape-blob {
+    background: #ff00b8;
+    position: absolute;
+    height: 90px;
+    width: 158px;
+    border-radius: 40% 50% 30% 40%;
+    animation: movement_one 12s ease-in-out 1500ms infinite both;
+    opacity: 1;
+    z-index: -1;
+    filter: blur(58px);
+  }
+
+  .shape-blob-Two {
+    background: #792bf2;
+    position: absolute;
+    height: 90px;
+    width: 158px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 40% 50% 30% 40%;
+    animation: movement_two 12s ease-in-out 1500ms infinite both;
+    opacity: 1;
+    z-index: -1;
+    filter: blur(58px);
+  }
+
+  @keyframes movement_one {
+    0%,
+    100% {
+      left: 0;
+      top: 0;
+    }
+    25% {
+      left: 57%;
+      top: 0;
+    }
+    50% {
+      left: 57%;
+      top: 83%;
+    }
+    75% {
+      left: 0%;
+      top: 83%;
+    }
+  }
+
+  @keyframes movement_two {
+    0%,
+    100% {
+      right: 0;
+      bottom: 0;
+    }
+    25% {
+      right: 58%;
+      bottom: 0;
+    }
+    50% {
+      right: 58%;
+      bottom: 85%;
+    }
+    75% {
+      right: 0;
+      bottom: 85%;
+    }
+  }
+}
